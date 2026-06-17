@@ -1,49 +1,117 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Nico Vallecillo | Mi Sitio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nico Ovallecillo | Diario Personal</title>
     <style>
-        /* Esto le da forma a la página sin complicarte la vida */
+        /* Base del diseño: tipografía elegante y limpia */
         body {
-            font-family: Arial, sans-serif; /* Una letra más limpia */
-            max-width: 650px;               /* Hace que el texto no se estire horizontalmente infinito */
-            margin: 40px auto;              /* Centra todo el contenido en la pantalla */
-            padding: 0 20px;                /* Deja aire a los costados en el celular */
-            color: #333333;                 /* Un color de letra gris oscuro más suave que el negro puro */
-            line-height: 1.6;               /* Más espacio entre renglones para que se lea fácil */
-        }
-        
-        h1 {
-            color: #111111;
-            border-bottom: 2px solid #eaeaea; /* Una línea sutil divisoria abajo del título */
-            padding-bottom: 10px;
+            font-family: 'Georgia', serif; /* Tipografía estilo libro/revista, como tu ejemplo */
+            line-height: 1.8;
+            color: #222;
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background-color: #fcfcfc; /* Un fondo blanco roto muy sutil */
         }
 
-        .contacto {
-            background-color: #f9f9f9;      /* Un recuadro gris muy sutil para destacar algo */
-            padding: 15px;
-            border-radius: 5px;
-            margin-top: 30px;
+        /* El Menú Superior (Barra de Navegación) */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 20px;
+            margin-bottom: 50px;
+        }
+
+        nav .logo {
+            font-weight: bold;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #666;
+            font-size: 0.95rem;
+            font-family: sans-serif; /* Menús limpios sin serif */
+        }
+
+        nav ul li a:hover {
+            color: #000;
+        }
+
+        /* Estilo para los artículos/redacciones */
+        .post-meta {
+            font-family: sans-serif;
+            font-size: 0.85rem;
+            color: #888;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            line-height: 1.2;
+            margin-top: 0;
+            font-weight: normal;
+        }
+
+        .introduccion {
+            font-size: 1.2rem;
+            color: #444;
+            font-style: italic;
+            margin-bottom: 30px;
+        }
+
+        /* Separador entre secciones */
+        hr {
+            border: 0;
+            border-top: 1px solid #eee;
+            margin: 40px 0;
         }
     </style>
 </head>
 <body>
 
-    <h1>Nico Ovallecillo</h1>
-    <p>Bienvenido. Esta es mi página web oficial, creada de la manera más rápida, simple y bajo mi total control.</p>
-    
-    <h2>¿Qué hago?</h2>
-    <p>Aquí puedes escribir un resumen corto de a qué te dedicas, tu proyecto, tus ideas o lo que estés ofreciendo en este momento.</p>
-
-    <div class="contacto">
-        <h3>Contacto directo</h3>
-        <p>Si quieres comunicarte conmigo, puedes escribirme por cualquiera de estos medios:</p>
+    <!-- AQUÍ ESTÁ TU MENÚ -->
+    <nav>
+        <div class="logo">Nico O.</div>
         <ul>
-            <li><strong>Email:</strong> tu-correo@gmail.com</li>
-            <li><strong>Instagram:</strong> @tu_usuario</li>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Artículos</a></li>
+            <li><a href="#">Sobre mí</a></li>
         </ul>
-    </div>
+    </nav>
+
+    <!-- AQUÍ EMPIEZA TU REDACCIÓN -->
+    <main>
+        <div class="post-meta">17 de Junio, 2026 — Redacción</div>
+        <h1>Una guía simple para empezar desde cero</h1>
+        
+        <p class="introduccion">En un mundo lleno de tecnologías ruidosas y complejas, a veces la verdadera libertad se encuentra en regresar a lo básico.</p>
+
+        <p>Aquí es donde empiezas a escribir libremente. Puedes armar párrafos largos, contar tus historias, tus procesos o tus ideas del negocio. Al usar la tipografía 'Georgia', el texto toma un aspecto de diario íntimo, editorial o blog de alta calidad, idéntico al enlace que me pasaste.</p>
+
+        <p>Lo bueno de este formato es que no dependes de ninguna plantilla rígida de WordPress o Wix. Si mañana quieres agregar otro artículo abajo, simplemente copias este bloque de texto, pones una línea divisoria (un separador) y redactas el siguiente.</p>
+        
+        <hr>
+
+        <h2>Siguiente reflexión o sección</h2>
+        <p>Puedes estructurar tu página agregando subtítulos así de fácil. Todo se mantiene centrado de forma automática y se adapta perfectamente si alguien lo lee desde un teléfono móvil.</p>
+    </main>
 
 </body>
 </html>
